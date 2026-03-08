@@ -34,5 +34,16 @@ def encontrarModa(listaNumeros):  # Encontra a moda
     return indicesMaisRepetido
 
 
-arr = [1, 1, 1, 12, 3, 4, 5, 3, 2, 1]
-print(f"Moda's -> {encontrarModa(listaNumeros=arr)}")
+transporte = [
+    150.00,
+    200.00,
+    170.00,
+    220.00,
+    120.00,
+    210.00,
+    160.00,
+    190.00,
+    140.00,
+    230.00,
+]
+print(f"Moda's -> {encontrarModa(listaNumeros=transporte)}")
