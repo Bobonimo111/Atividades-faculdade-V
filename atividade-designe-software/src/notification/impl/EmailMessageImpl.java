@@ -3,7 +3,8 @@ package notification.impl;
 import notification.MessageData;
 import notification.MessageInterface;
 
-public class SmsMessageImpl implements MessageInterface {
+public class EmailMessageImpl implements MessageInterface {
+
     private MessageData messageData;
 
     @Override
@@ -13,12 +14,11 @@ public class SmsMessageImpl implements MessageInterface {
 
     @Override
     public void sendNotification() {
-        if(messageData.getTelefone() == null) {
-            System.out.println("messageData.Telefone não pode ser nulo.");
+        if(this.messageData.getEmail() == null) {
+            System.out.println("messageData.email não pode ser nulo.");
             return;
         }
-
-        System.out.println("Enviando SMS");
-        System.out.println("SMS enviado para "+ this.messageData.getTelefone() );
+        System.out.println("Conectando ao servidor de Emails");
+        System.out.println("Enviando email|!!" + messageData.getEmail());
     }
 }

@@ -1,5 +1,6 @@
 import notification.MessageData;
 import notification.NotificationFactory;
+import notification.impl.EmailNotification;
 import notification.impl.SmsNotification;
 
 public class Main {
@@ -8,6 +9,7 @@ public class Main {
         MessageData message = new MessageData();
 
         message.setMessage("Hello World");
+        message.setEmail("teste@email.com");
         message.setTelefone("999999999");
 
         not.sendNotification(message);
