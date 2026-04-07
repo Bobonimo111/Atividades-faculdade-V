@@ -32,6 +32,7 @@ Ele deve ter, visualmente:
 Copie e adapte conforme sua base e features. Não precisa decorar — precisa entender
 cada linha e saber explicar no vídeo.
 
+```
 1 import numpy as np
 2 import pandas as pd
 3 from sklearn.model_selection import train_test_split
@@ -105,3 +106,4 @@ cada linha e saber explicar no vídeo.
 68 # 8. Coeficientes e OR (logistica)
 69 for nome , beta in zip (X.columns , log.coef_[0]):
 70 print (f"{nome}: beta={beta:.4f}, OR={np.exp(beta):.4f}")
+```
