@@ -1,22 +1,25 @@
 Alternativa: procure “Student Performance Dataset UCI” no Kaggle.
 data set utilizado : https://www.kaggle.com/datasets/tejas14/student-final-grade-prediction-multi-lin-reg
 
-
 Lembrete geral: se seu target é numérico, o Cenário A é linear e o Cenário B transforma
 em binário (↑ Q3 =1, resto =0) para logística. Se o target é binário, o Cenário A é
 logística e o Cenário B trata 0/1 como número para linear. Em ambos, calcule RMSE,
 matriz de confusão, ROC/AUC e teste 3 thresholds(Limites).
 
 Features: studytime, failures, absences, G1, G2.
+
 ## 9.10. PERGUNTAS FREQUENTES 173
+
 Contexto: Modelo com notas anteriores fica “bom demais”?
 Guia: Cenário A: R2 com G1+G2 vai ser muito alto. Retire G1 e G2 e recalcule —
 o quanto caiu? É “justo” incluir notas anteriores se queremos prever antes de tê-las?
 No Cenário B, compare AUC com e sem G1/G2.
 
 ## 9.5 O que o infográfico deve conter
+
 O infográfico é 1 página PDF (Canva, PowerPoint, Google Slides, ou até papel escaneado).
 Ele deve ter, visualmente:
+
 1. Nome, problema e base de dados.
 2. Pergunta de negócio (1 frase).
 3. Cenário A (modelo natural): métricas, coeficientes, interpretação.
@@ -29,6 +32,7 @@ Ele deve ter, visualmente:
 7. Conclusão: qual modelo é melhor para este problema? Por quê?
 
 ## 9.4 Código-base que todo aluno deve usar
+
 Copie e adapte conforme sua base e features. Não precisa decorar — precisa entender
 cada linha e saber explicar no vídeo.
 
