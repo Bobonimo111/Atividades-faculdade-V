@@ -1,10 +1,15 @@
 import streamlit as st
 import pandas as pd
 from google import genai
+import os
 
 st.set_page_config(page_title="Bank Marketing - Análise", layout="wide")
 
-DATA_PATH = "./data-set/bank-additional-full.csv"
+# 1. Pega o diretório onde este arquivo de código atual está localizado
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# 2. Junta o diretório base com o caminho do seu dataset
+DATA_PATH = os.path.join(BASE_DIR, "data-set", "bank-additional-full.csv")
 
 
 @st.cache_data
